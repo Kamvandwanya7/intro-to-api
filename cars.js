@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             carsColor.innerHTML = html;
         })
 
-        /v1/makes
+        // /v1/makes
 })
 
 
