@@ -1,0 +1,11 @@
+.carTable{
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+table th{
+    font-size: 22px;
+    padding: 20px 30px;
+}

@@ -11,23 +11,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
         integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
 
     <script class="carsTemplate" type="text/template-x">
 
-        {{#each carUser}}
-       <table>
-    
-        <thead>
+        <table class="carTable" border="1">
+            
+            <tr>
+                <th>Make</th>
+                <th>Color</th>
+                <th>Model</th>
+                <!-- <th>Date</th> -->
+            </tr>
+            {{#each carUser}}
+            <tr>
+                <td>{{make}}</td> 
+                <td>{{color}}</td>
+                <td>{{model}}</td>
+            </tr>
 
-            <td>{{make}}</td> 
-            <td>{{color}}</td>
-            <td>{{model}}</td>
-        </thead>
-
+            {{/each}}
         </table>
-        {{/each}}
     </script>
 
 
