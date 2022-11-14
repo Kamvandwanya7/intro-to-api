@@ -10,7 +10,7 @@ var carsOutput = Handlebars.compile(carsTemplate.innerHTML)
 
 document.addEventListener('DOMContentLoaded', function () {
     axios
-        .get(`http://api-tutor.herokuapp.com/v1/cars`)
+        .get(`https://api-tutor.herokuapp.com/v1/cars`)
         .then(result => {
             const carResult = result.data;
             console.log(carResult);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         axios
-        .get(`http://api-tutor.herokuapp.com/v1/colors`)
+        .get(`https://api-tutor.herokuapp.com/v1/colors`)
         .then(result => {
             const resultColor = result.data;
             console.log(resultColor);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
          
         axios
-        .get(`http://api-tutor.herokuapp.com/v1/makes`)
+        .get(`https://api-tutor.herokuapp.com/v1/makes`)
         .then(result => {
             const carMake = result.data;
             console.log(carMake);
